@@ -1,0 +1,21 @@
+{
+  "name": "moment1_dt207g_maok1900",
+  "version": "1.0.0",
+  "description": "databasbaserat CV med Node.js och Expres och SQLite",
+  "main": "index.js",
+  "scripts": {
+    "install": "node install.js",
+    "start" : "nodemon server.js"
+  },
+ 
+  "author": "Maamoun Okla",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
