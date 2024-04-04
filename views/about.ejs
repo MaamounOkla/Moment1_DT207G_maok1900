@@ -2,57 +2,118 @@
 <html lang="sv">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" />
 
-  <title>Dina Kurser</title>
+    <title>Dina Kurser</title>
 </head>
 
 <body>
-  <nav>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <ul>
-      <li><a href="/">Startsida</a></li>
-      <li><a href="addCourse">Lägg till kurs</a></li>
-      <li><a href="about">Info om uppgiften</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="report">
-      <h1>Beskrivningen av lösningen</h1>
-      <div class="personal-information">
-        <h2 class="name">
-          Författare: Maamoun Okla
-        </h2><br>
-        <h2 class="kurs">Kurs: DT207G Backend-baserad Webbutveckling</h2><br>
-        <h2 class="termin">Termin: VT24</h2><br>
-        <div class="logo">
-          <img src="/assets/logo.png?as=webp&width=200" type="image/png" alt="">
+    <nav>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-      </div>
-      </div>
-      <hr>
-      <div class="section1">
-        <br><br>
-        <h2>Metod och konstruktion</h2>
-        </p>
-      </div>
-    </section>
-  </main>
+        <ul>
+            <li><a href="/">Startsida</a></li>
+            <li><a href="addCourse">Lägg till kurs</a></li>
+            <li><a href="about">Info om uppgiften</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <h1>Beskrivningen av lösningen</h1>
+        <hr>
+        <section class="report">
+            <br><br>
+          
+            <div class="personal-information">
+                <h2 class="name">
+                    Författare: Maamoun Okla
+                </h2><br>
+                <h2 class="kurs">Kurs: DT207G Backend-baserad Webbutveckling</h2><br>
+                <h2 class="termin">Termin: VT24</h2><br>
+                <div class="logo">
+                    <img src="/assets/logo.png?as=webp&width=200" type="image/png" alt="">
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="section1">
+                <br><br>
+                <h2>1. Syfte</h2>
+                <p>Syftet med denna webbplats är att kunna skapa en webbplats som använder sig av så kallad
+                    "server-baserad" rendering. Där alltså bearbetningen sker på server istället för på
+                    klientens/användarens sida samt att kunna bygga en databas som renderar alla undersidor och
+                    innehåller tabell med viktig kursinformation.</p>
+          
+                <br><br>
+                <h2>2. Konstruktion och utvecklingsmiljö</h2>
+                <p>
+                    För att bygga en sådan webbapplikation krävs det följande:
+                    <br>
+                    &nbsp; <li>Visual Studio Code.</li>
+                    &nbsp; <li>Webbläsare, till exempel Chrome eller FireFox.</li>
+                    &nbsp; <li>NodeJS installerat.</li>
+                    <br>
+                    De packet som används i den här webbapplikationen:
+                    <br>
+                    &nbsp; <li>Express för att skapa servern och ansluta till en relationsdatabas för att lagra
+                        kursinformation.</li>
+                    &nbsp; <li>Sqlite3 som relationsdatabas, eller en annan relationsdatabas som till exempel MySQL
+                        eller MariaDB.</li>
+                    &nbsp; <li>Nodemon för att underlätta port-hantering och uppdateringen av applikationen under
+                        utvecklingsfasen.</li>
+                    &nbsp; <li>EJS (Embedded JavaScript) för att underlätta Vyhantering / View Engines
+                        där man kan rendera HTML-innehåll dynamiskt.</li>
+
+                        <br><br>
+                        Ett ER-diagram kan vara en bra idé för att kunna strukturera sin databas på förhand.
+                        <br>
+                        Här är ett exempel på hur en lämplig tabell kan se ut. 
+                      <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile&gt;&lt;diagram id=\&quot;gFkgd-TUMhGBn4Lf94Y2\&quot; name=\&quot;Page-1\&quot;&gt;&lt;mxGraphModel dx=\&quot;1072\&quot; dy=\&quot;563\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;850\&quot; pageHeight=\&quot;1100\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;&lt;root&gt;&lt;mxCell id=\&quot;0\&quot;/&gt;&lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot;/&gt;&lt;mxCell id=\&quot;2\&quot; value=\&quot;Courses\&quot; style=\&quot;shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;&lt;mxGeometry x=\&quot;340\&quot; y=\&quot;410\&quot; width=\&quot;210\&quot; height=\&quot;250\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;3\&quot; value=\&quot;\&quot; style=\&quot;shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;2\&quot;&gt;&lt;mxGeometry y=\&quot;30\&quot; width=\&quot;210\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;4\&quot; value=\&quot;PK\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;3\&quot;&gt;&lt;mxGeometry width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;5\&quot; value=\&quot;id int NOT NULL\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;3\&quot;&gt;&lt;mxGeometry x=\&quot;30\&quot; width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;6\&quot; value=\&quot;\&quot; style=\&quot;shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;2\&quot;&gt;&lt;mxGeometry y=\&quot;60\&quot; width=\&quot;210\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;7\&quot; value=\&quot;\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;6\&quot;&gt;&lt;mxGeometry width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;8\&quot; value=\&quot;coursename varchar(64)\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;6\&quot;&gt;&lt;mxGeometry x=\&quot;30\&quot; width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;9\&quot; value=\&quot;\&quot; style=\&quot;shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;2\&quot;&gt;&lt;mxGeometry y=\&quot;90\&quot; width=\&quot;210\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;10\&quot; value=\&quot;\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;9\&quot;&gt;&lt;mxGeometry width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;11\&quot; value=\&quot;coursecode varchar (11)\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;9\&quot;&gt;&lt;mxGeometry x=\&quot;30\&quot; width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;12\&quot; value=\&quot;\&quot; style=\&quot;shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;\&quot; vertex=\&quot;1\&quot; parent=\&quot;2\&quot;&gt;&lt;mxGeometry y=\&quot;120\&quot; width=\&quot;210\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=\&quot;13\&quot; value=\&quot;\&quot; style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;12\&quot;&gt;&lt;mxGeometry width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;30\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;object label=\&quot;progression varchar (2)\&quot; id=\&quot;14\&quot;&gt;&lt;mxCell style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;12\&quot;&gt;&lt;mxGeometry x=\&quot;30\&quot; width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;180\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/object&gt;&lt;object label=\&quot;syllabus varchar(200)\&quot; id=\&quot;30\&quot;&gt;&lt;mxCell style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;&lt;mxGeometry x=\&quot;370\&quot; y=\&quot;560\&quot; width=\&quot;150\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;150\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/object&gt;&lt;object label=\&quot;release_date date NOT NULL\&quot; id=\&quot;31\&quot;&gt;&lt;mxCell style=\&quot;shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;&lt;mxGeometry x=\&quot;370\&quot; y=\&quot;590\&quot; width=\&quot;190\&quot; height=\&quot;30\&quot; as=\&quot;geometry\&quot;&gt;&lt;mxRectangle width=\&quot;150\&quot; height=\&quot;30\&quot; as=\&quot;alternateBounds\&quot;/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/object&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+                </p>
+                <br><br>
+                <h2>3. Slutsats</h2>
+                <p>
+                    Jag anser att serverbaserad webbutveckling, där man kan bygga webbapplikationen på serversidan och
+                    sedan skicka/rendera innehållet dynamiskt på klientsidan, är mycket bättre än att ha allting på
+                    klientsidan av flera olika anledningar.
+
+                    Det första är att det är dynamiskt och man kan lagra data relaterad till specifika undersidor samt
+                    kunna rendera undersidor med den data man önskar. Det andra är flexibiliteten med att använda
+                    "Routing", där man har större kontroll över strukturen av applikationen och dess undersidor och
+                    moduler jämfört med frontend-baserade webbapplikationer.
+                    <br><br>
+                    Sedan är det fördelaktigt med backend-baserade webbapplikationeners säkerhet eftersom man då kan
+                    vara säker på att man själv skriver koden till databasen. På detta sätt kan man öka säkerheten
+                    avsevärt och undvika hackare eller till exempel det så kallade "SQL-injections". Detta är särskilt
+                    viktigt om man ska ta emot data från användare i form av användarnamn och lösenord eller andra
+                    känsliga uppgifter.
+                    <br><br>
+                    Nackdelen är dock att det inte är lika lätt som att endast skapa frontenden och publicera till ett webbhotell som hanterar alla backend-relaterade problem. Man måste därför vara extra noggrann med att allting fungerar och att anslutningen till rätt databas och tabell är korrekt.
+
+                    En annan nackdel för nybörjare är risken att radera hela databasen med felaktigt kommando, så det är extra viktigt att ta hänsyn och strukturera applikationen i förväg med hjälp av till exempel ER-diagram.
+                </p>
+                </p>
+
+            </div>
+            <br><br>
+            <hr>
+        </section>
+    </main>
 </body>
 <script>
-  //Responsiv nav-meny
-  document.querySelector('.burger').addEventListener('click', function() {
-    document.querySelector('nav ul').classList.toggle('active');
-  });
+    //Responsiv nav-meny
+    document.querySelector('.burger').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
 </script>
 
 </html>
