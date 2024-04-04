@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dina Kurser</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Font awesome icons -->
+  <script src="https://kit.fontawesome.com/580c2ac5ba.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Dina Kurser</title>
 </head>
+
 <body>
-    <h1>Här är en lista över dina kurser</h1>
+  <nav>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul>
+      <li><a href="/">Startsida</a></li>
+      <li><a href="addCourse">Lägg till kurs</a></li>
+      <li><a href="about">Info om uppgiften</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Här är en lista över alla dina befintliga kurser</h1>
+    <hr />
+    <% if(locals.rows && locals.rows!="" ) { %>
+    <% locals.rows.forEach(row=> {
+                %>
+    <article>
+      <p><span>Kursnamn: </span>
+        <%= row.coursename %>
+      </p>
+      <p><span>Kurskod: </span>
+        <%= row.coursecode %>
+      </p>
+      <p><span>Progression: </span>
+        <%= row.progression %>
+      </p>
+      <p>
+        <a title="<%= row.syllabus %>" class="link" href="<%= row.syllabus %>">Länk till kurswebbsida <i class="fa-solid fa-link"></i>
+        </a>
+
+      </p>
+      <p><span>Skapades: </span>
+        <%= row.posted %>
+      </p>
+      <a href="/delete/<%=row.id %>" class="remove">Radera Kurs<i class="fa-solid fa-trash" style="color: #ff1f1f;"></i></a>
+
+    </article>
+    <% }); %>
+    <% } %>
+
+    <hr />
+  </main>
 </body>
+<script>
+    //Responsiv nav-meny
+    document.querySelector('.burger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
+});
+ </script>
 </html>

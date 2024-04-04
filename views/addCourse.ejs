@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Lägg till Kurs</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul>
+            <li><a href="/">Startsida</a></li>
+            <li><a href="addCourse">Lägg till kurs</a></li>
+            <li><a href="about">Info om uppgiften</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Här kan du lägga till nya kurser till din kurslista</h1>
+        <hr>
+        <form method="post">
+            <% if(error !="" ) {%>
+                <p class="error">
+                    <%= error %>
+                </p>
+                <%} %>
+
+                    <!-- ( id | coursecode | coursename | syllabus | progression | posted) -->
+                    <div class="rows"></div>
+                    <label for="courseCode">Kurskod:</label>
+                    <input type="text" name="courseCode" id="courseCode" required="true"  />
+                    </div>
+                    <br />
+                    <div class="rows">
+                        <label for="courseName">Kursnamn: </label>
+                        <input type="text" id="courseName" name="courseName" required="true"></input>
+                    </div>
+                    <br />
+                    <div class="rows">
+                        <label for="syllabus">Länk: </label>
+                        <input type="url" id="syllabus" name="syllabus" required="true"></input>
+                    </div>
+                    <br />
+
+                    <div class="rows">
+                        <label id="progression" for="progression">Progression:</label>
+                        &nbsp;
+                        <label for="a">A</label>
+                        <input id="a" value="A" type="radio" required="true" name="progression">
+                        &nbsp;
+                        <label for="b">B</label>
+                        <input id="b" value="B" type="radio" name="progression">
+                        &nbsp;
+                        <label for="c">C</label>
+                        <input id="c" value="C" type="radio" name="progression">
+                    </div>
+                    <br />
+
+                    <input type="submit" value="Posta kommentar" />
+        </form>
+
+    </main>
+</body>
+<script>
+    //Responsiv nav-meny
+    document.querySelector('.burger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
+});
+ </script>
+</html>

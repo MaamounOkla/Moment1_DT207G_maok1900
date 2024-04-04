@@ -1,1 +1,220 @@
-   
+/* //Global Stil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  min-height: 10vh;
+
+  width: 100%;
+  padding: 2rem;
+
+  background: linear-gradient(
+    rgb(48, 48, 48) 13%,
+    rgb(30, 30, 30) 40%,
+    #0c0d11 86%
+  );
+  color: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
+  box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10);
+}
+nav ul {
+  display: flex;
+  width: fit-content;
+  list-style: none;
+  gap: gap 2rem;
+}
+nav li {
+  margin: 1rem;
+}
+nav a {
+  background: #ffde08;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  transition: 300ms ease-in-out;
+}
+nav a:hover {
+  background: #a197ff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #ffde08;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(60, 60, 60, 0.162);
+  min-height: 100vh;
+  padding: 2rem;
+}
+/* addCourse sida*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.rows {
+  margin: 1rem 0;
+}
+input[type="text"],
+input[type="url"],
+textarea {
+  width: 100%;
+  height: 3rem;
+
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0px 0px 5px rgba(118, 133, 247, 0.489),
+    0 4px 12px rgba(10, 10, 10, 0.084);
+  margin: 5px 0;
+}
+textarea {
+  height: 10em;
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+input[type="submit"] {
+  width: 10rem;
+  padding: 1rem;
+}
+input[type="submit"] {
+  width: 10rem;
+  padding: 1rem;
+  background: #ffde08;
+
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #ffe641;
+  box-shadow: 0 0 10px rgba(118, 133, 247, 0.489);
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+/* Startsida */
+
+article {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(136, 149, 247, 0.489);
+  padding: 1em;
+  margin: 1em 0;
+}
+article span {
+  font-weight: bold;
+}
+.link {
+  font-weight: bold;
+}
+
+.info {
+  color: gray;
+}
+.remove {
+  padding: 0 1rem;
+  border-radius: 5px;
+  background: #ffde08;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  background: #ffe641;
+}
+/* //about sida */
+.report {
+  width: 100%;
+  padding-bottom: 10rem;
+}
+.report ul li {
+  line-height: 4rem;
+  list-style: disc;
+  padding: 0.6rem 1rem;
+}
+.report ol li {
+  line-height: 4rem;
+  padding: 0.6rem 1rem;
+}
+.report h1 {
+  margin: 2rem 0;
+}
+.personal-information{
+  font-weight: normal;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 769px) {
+  body {
+    font-size: 1rem;
+  }
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+  .logo img {
+    width: 200px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: ;
+    left: 0;
+    top: 10vh;
+    background: linear-gradient(
+      rgb(48, 48, 48) 13%,
+      rgb(30, 30, 30) 40%,
+      #0c0d11 86%
+    );
+    width: 50%;
+    padding: 10px;
+    color: #ffe641;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 1rem;
+    width: 100%;
+  }
+  nav a {
+    background: none;
+    color: #ffde08;
+  }
+}
